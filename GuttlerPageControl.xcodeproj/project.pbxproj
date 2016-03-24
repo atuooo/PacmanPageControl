@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C9173D7A1CA2CE050056C761 /* GuttlerPageControlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9173D791CA2CE050056C761 /* GuttlerPageControlTests.swift */; };
+		C9173D851CA2CE050056C761 /* GuttlerPageControlUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9173D841CA2CE050056C761 /* GuttlerPageControlUITests.swift */; };
+		C9173D951CA2CE6C0056C761 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9173D931CA2CE6C0056C761 /* AppDelegate.swift */; };
+		C9173D961CA2CE6C0056C761 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9173D941CA2CE6C0056C761 /* ViewController.swift */; };
+		C9173D991CA2CE7E0056C761 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9173D971CA2CE7E0056C761 /* Main.storyboard */; };
+		C9173D9C1CA2CE850056C761 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9173D9A1CA2CE850056C761 /* LaunchScreen.storyboard */; };
+		C9173D9E1CA2CE9E0056C761 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9173D9D1CA2CE9E0056C761 /* Assets.xcassets */; };
+		C9173DAA1CA2D09F0056C761 /* ColorDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9173DA41CA2D09F0056C761 /* ColorDefinition.swift */; };
+		C9173DAB1CA2D09F0056C761 /* Hue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9173DA51CA2D09F0056C761 /* Hue.swift */; };
+		C9173DAD1CA2D09F0056C761 /* Luminosity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9173DA71CA2D09F0056C761 /* Luminosity.swift */; };
+		C9173DAE1CA2D09F0056C761 /* RandomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9173DA91CA2D09F0056C761 /* RandomColor.swift */; };
+		C9173DB01CA2D0B60056C761 /* IndicatorLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9173DAF1CA2D0B60056C761 /* IndicatorLayer.swift */; };
+		C9173DB21CA2D0E80056C761 /* BubblesLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9173DB11CA2D0E80056C761 /* BubblesLayer.swift */; };
+		C9173DB41CA2D1200056C761 /* GuttlerPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9173DB31CA2D1200056C761 /* GuttlerPageControl.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C9173D761CA2CE050056C761 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9173D591CA2CE050056C761 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9173D601CA2CE050056C761;
+			remoteInfo = GuttlerPageControl;
+		};
+		C9173D811CA2CE050056C761 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9173D591CA2CE050056C761 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9173D601CA2CE050056C761;
+			remoteInfo = GuttlerPageControl;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C9173D611CA2CE050056C761 /* GuttlerPageControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuttlerPageControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9173D751CA2CE050056C761 /* GuttlerPageControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuttlerPageControlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9173D791CA2CE050056C761 /* GuttlerPageControlTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuttlerPageControlTests.swift; sourceTree = "<group>"; };
+		C9173D7B1CA2CE050056C761 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9173D801CA2CE050056C761 /* GuttlerPageControlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuttlerPageControlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9173D841CA2CE050056C761 /* GuttlerPageControlUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuttlerPageControlUITests.swift; sourceTree = "<group>"; };
+		C9173D861CA2CE050056C761 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9173D931CA2CE6C0056C761 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Demo/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		C9173D941CA2CE6C0056C761 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Demo/ViewController.swift; sourceTree = SOURCE_ROOT; };
+		C9173D981CA2CE7E0056C761 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Demo/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		C9173D9B1CA2CE850056C761 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Demo/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		C9173D9D1CA2CE9E0056C761 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Demo/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		C9173D9F1CA2CEAB0056C761 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Demo/Info.plist; sourceTree = SOURCE_ROOT; };
+		C9173DA41CA2D09F0056C761 /* ColorDefinition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorDefinition.swift; sourceTree = "<group>"; };
+		C9173DA51CA2D09F0056C761 /* Hue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hue.swift; sourceTree = "<group>"; };
+		C9173DA71CA2D09F0056C761 /* Luminosity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Luminosity.swift; sourceTree = "<group>"; };
+		C9173DA91CA2D09F0056C761 /* RandomColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomColor.swift; sourceTree = "<group>"; };
+		C9173DAF1CA2D0B60056C761 /* IndicatorLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IndicatorLayer.swift; path = GuttlerPageControl/IndicatorLayer.swift; sourceTree = "<group>"; };
+		C9173DB11CA2D0E80056C761 /* BubblesLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BubblesLayer.swift; path = GuttlerPageControl/BubblesLayer.swift; sourceTree = "<group>"; };
+		C9173DB31CA2D1200056C761 /* GuttlerPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GuttlerPageControl.swift; path = GuttlerPageControl/GuttlerPageControl.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9173D5E1CA2CE050056C761 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9173D721CA2CE050056C761 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9173D7D1CA2CE050056C761 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C9173D581CA2CE050056C761 = {
+			isa = PBXGroup;
+			children = (
+				C9173D631CA2CE050056C761 /* Demo */,
+				C9173DA21CA2CFD00056C761 /* GuttlerPageControl */,
+				C9173D921CA2CE0F0056C761 /* Supporthings */,
+				C9173D781CA2CE050056C761 /* GuttlerPageControlTests */,
+				C9173D831CA2CE050056C761 /* GuttlerPageControlUITests */,
+				C9173D621CA2CE050056C761 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C9173D621CA2CE050056C761 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9173D611CA2CE050056C761 /* GuttlerPageControl.app */,
+				C9173D751CA2CE050056C761 /* GuttlerPageControlTests.xctest */,
+				C9173D801CA2CE050056C761 /* GuttlerPageControlUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9173D631CA2CE050056C761 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				C9173D941CA2CE6C0056C761 /* ViewController.swift */,
+				C9173D931CA2CE6C0056C761 /* AppDelegate.swift */,
+				C9173D971CA2CE7E0056C761 /* Main.storyboard */,
+			);
+			name = Demo;
+			path = GuttlerPageControl;
+			sourceTree = "<group>";
+		};
+		C9173D781CA2CE050056C761 /* GuttlerPageControlTests */ = {
+			isa = PBXGroup;
+			children = (
+				C9173D791CA2CE050056C761 /* GuttlerPageControlTests.swift */,
+				C9173D7B1CA2CE050056C761 /* Info.plist */,
+			);
+			path = GuttlerPageControlTests;
+			sourceTree = "<group>";
+		};
+		C9173D831CA2CE050056C761 /* GuttlerPageControlUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C9173D841CA2CE050056C761 /* GuttlerPageControlUITests.swift */,
+				C9173D861CA2CE050056C761 /* Info.plist */,
+			);
+			path = GuttlerPageControlUITests;
+			sourceTree = "<group>";
+		};
+		C9173D921CA2CE0F0056C761 /* Supporthings */ = {
+			isa = PBXGroup;
+			children = (
+				C9173D9A1CA2CE850056C761 /* LaunchScreen.storyboard */,
+				C9173D9D1CA2CE9E0056C761 /* Assets.xcassets */,
+				C9173D9F1CA2CEAB0056C761 /* Info.plist */,
+			);
+			name = Supporthings;
+			path = GuttlerPageControl;
+			sourceTree = "<group>";
+		};
+		C9173DA21CA2CFD00056C761 /* GuttlerPageControl */ = {
+			isa = PBXGroup;
+			children = (
+				C9173DB31CA2D1200056C761 /* GuttlerPageControl.swift */,
+				C9173DAF1CA2D0B60056C761 /* IndicatorLayer.swift */,
+				C9173DB11CA2D0E80056C761 /* BubblesLayer.swift */,
+				C9173DA31CA2D09F0056C761 /* RandomColor */,
+			);
+			name = GuttlerPageControl;
+			sourceTree = "<group>";
+		};
+		C9173DA31CA2D09F0056C761 /* RandomColor */ = {
+			isa = PBXGroup;
+			children = (
+				C9173DA41CA2D09F0056C761 /* ColorDefinition.swift */,
+				C9173DA51CA2D09F0056C761 /* Hue.swift */,
+				C9173DA71CA2D09F0056C761 /* Luminosity.swift */,
+				C9173DA91CA2D09F0056C761 /* RandomColor.swift */,
+			);
+			name = RandomColor;
+			path = GuttlerPageControl/RandomColor;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C9173D601CA2CE050056C761 /* GuttlerPageControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9173D891CA2CE050056C761 /* Build configuration list for PBXNativeTarget "GuttlerPageControl" */;
+			buildPhases = (
+				C9173D5D1CA2CE050056C761 /* Sources */,
+				C9173D5E1CA2CE050056C761 /* Frameworks */,
+				C9173D5F1CA2CE050056C761 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GuttlerPageControl;
+			productName = GuttlerPageControl;
+			productReference = C9173D611CA2CE050056C761 /* GuttlerPageControl.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C9173D741CA2CE050056C761 /* GuttlerPageControlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9173D8C1CA2CE050056C761 /* Build configuration list for PBXNativeTarget "GuttlerPageControlTests" */;
+			buildPhases = (
+				C9173D711CA2CE050056C761 /* Sources */,
+				C9173D721CA2CE050056C761 /* Frameworks */,
+				C9173D731CA2CE050056C761 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9173D771CA2CE050056C761 /* PBXTargetDependency */,
+			);
+			name = GuttlerPageControlTests;
+			productName = GuttlerPageControlTests;
+			productReference = C9173D751CA2CE050056C761 /* GuttlerPageControlTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C9173D7F1CA2CE050056C761 /* GuttlerPageControlUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9173D8F1CA2CE050056C761 /* Build configuration list for PBXNativeTarget "GuttlerPageControlUITests" */;
+			buildPhases = (
+				C9173D7C1CA2CE050056C761 /* Sources */,
+				C9173D7D1CA2CE050056C761 /* Frameworks */,
+				C9173D7E1CA2CE050056C761 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9173D821CA2CE050056C761 /* PBXTargetDependency */,
+			);
+			name = GuttlerPageControlUITests;
+			productName = GuttlerPageControlUITests;
+			productReference = C9173D801CA2CE050056C761 /* GuttlerPageControlUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9173D591CA2CE050056C761 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = oOatuo;
+				TargetAttributes = {
+					C9173D601CA2CE050056C761 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					C9173D741CA2CE050056C761 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = C9173D601CA2CE050056C761;
+					};
+					C9173D7F1CA2CE050056C761 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = C9173D601CA2CE050056C761;
+					};
+				};
+			};
+			buildConfigurationList = C9173D5C1CA2CE050056C761 /* Build configuration list for PBXProject "GuttlerPageControl" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C9173D581CA2CE050056C761;
+			productRefGroup = C9173D621CA2CE050056C761 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9173D601CA2CE050056C761 /* GuttlerPageControl */,
+				C9173D741CA2CE050056C761 /* GuttlerPageControlTests */,
+				C9173D7F1CA2CE050056C761 /* GuttlerPageControlUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C9173D5F1CA2CE050056C761 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9173D991CA2CE7E0056C761 /* Main.storyboard in Resources */,
+				C9173D9E1CA2CE9E0056C761 /* Assets.xcassets in Resources */,
+				C9173D9C1CA2CE850056C761 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9173D731CA2CE050056C761 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9173D7E1CA2CE050056C761 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9173D5D1CA2CE050056C761 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9173DB41CA2D1200056C761 /* GuttlerPageControl.swift in Sources */,
+				C9173DB01CA2D0B60056C761 /* IndicatorLayer.swift in Sources */,
+				C9173DB21CA2D0E80056C761 /* BubblesLayer.swift in Sources */,
+				C9173D961CA2CE6C0056C761 /* ViewController.swift in Sources */,
+				C9173D951CA2CE6C0056C761 /* AppDelegate.swift in Sources */,
+				C9173DAB1CA2D09F0056C761 /* Hue.swift in Sources */,
+				C9173DAA1CA2D09F0056C761 /* ColorDefinition.swift in Sources */,
+				C9173DAE1CA2D09F0056C761 /* RandomColor.swift in Sources */,
+				C9173DAD1CA2D09F0056C761 /* Luminosity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9173D711CA2CE050056C761 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9173D7A1CA2CE050056C761 /* GuttlerPageControlTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9173D7C1CA2CE050056C761 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9173D851CA2CE050056C761 /* GuttlerPageControlUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C9173D771CA2CE050056C761 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9173D601CA2CE050056C761 /* GuttlerPageControl */;
+			targetProxy = C9173D761CA2CE050056C761 /* PBXContainerItemProxy */;
+		};
+		C9173D821CA2CE050056C761 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9173D601CA2CE050056C761 /* GuttlerPageControl */;
+			targetProxy = C9173D811CA2CE050056C761 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C9173D971CA2CE7E0056C761 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9173D981CA2CE7E0056C761 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C9173D9A1CA2CE850056C761 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9173D9B1CA2CE850056C761 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C9173D871CA2CE050056C761 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C9173D881CA2CE050056C761 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C9173D8A1CA2CE050056C761 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = atuo.GuttlerPageControl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C9173D8B1CA2CE050056C761 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = atuo.GuttlerPageControl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C9173D8D1CA2CE050056C761 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GuttlerPageControlTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = atuo.GuttlerPageControlTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GuttlerPageControl.app/GuttlerPageControl";
+			};
+			name = Debug;
+		};
+		C9173D8E1CA2CE050056C761 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GuttlerPageControlTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = atuo.GuttlerPageControlTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GuttlerPageControl.app/GuttlerPageControl";
+			};
+			name = Release;
+		};
+		C9173D901CA2CE050056C761 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GuttlerPageControlUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = atuo.GuttlerPageControlUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GuttlerPageControl;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		C9173D911CA2CE050056C761 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GuttlerPageControlUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = atuo.GuttlerPageControlUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GuttlerPageControl;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9173D5C1CA2CE050056C761 /* Build configuration list for PBXProject "GuttlerPageControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9173D871CA2CE050056C761 /* Debug */,
+				C9173D881CA2CE050056C761 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9173D891CA2CE050056C761 /* Build configuration list for PBXNativeTarget "GuttlerPageControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9173D8A1CA2CE050056C761 /* Debug */,
+				C9173D8B1CA2CE050056C761 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9173D8C1CA2CE050056C761 /* Build configuration list for PBXNativeTarget "GuttlerPageControlTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9173D8D1CA2CE050056C761 /* Debug */,
+				C9173D8E1CA2CE050056C761 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9173D8F1CA2CE050056C761 /* Build configuration list for PBXNativeTarget "GuttlerPageControlUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9173D901CA2CE050056C761 /* Debug */,
+				C9173D911CA2CE050056C761 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9173D591CA2CE050056C761 /* Project object */;
+}
