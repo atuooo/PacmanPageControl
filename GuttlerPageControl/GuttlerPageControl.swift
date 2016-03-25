@@ -8,9 +8,9 @@
 
 import UIKit
 
-class GuttlerPageControl: UIView {
+public class GuttlerPageControl: UIView {
     
-    var bindScrollView : UIScrollView!
+    public var bindScrollView : UIScrollView!
     
     // bubble
     private var bubbleLayer : BubblesLayer!
@@ -34,7 +34,7 @@ class GuttlerPageControl: UIView {
     
     // MARK: - init
     
-    init(center: CGPoint, pages: Int) {
+    public init(center: CGPoint, pages: Int) {
         numOfPages = pages
         let rect = CGRect(origin: CGPointZero, size: CGSize(width: (bubbleGap * (numOfPages-1) + indicatorSize), height: indicatorSize))
         super.init(frame: rect)
@@ -42,14 +42,19 @@ class GuttlerPageControl: UIView {
         
         self.layer.masksToBounds = true
         
-        let tap = UITapGestureRecognizer(target: self, action: #selector(didTap(_:)))
-        self.addGestureRecognizer(tap)
+        #if swift(>=2.2)
+            let tap = UITapGestureRecognizer(target: self, action: #selector(didTap(_:)))
+            let pan = UIPanGestureRecognizer(target: self, action: #selector(didPan(_:)))
+        #else
+            let tap = UITapGestureRecognizer(target: self, action: "didTap:")
+            let pan = UIPanGestureRecognizer(target: self, action: "didPan:")
+        #endif
         
-        let pan = UIPanGestureRecognizer(target: self, action: #selector(didPan(_:)))
+        self.addGestureRecognizer(tap)
         self.addGestureRecognizer(pan)
     }
     
-    override func willMoveToSuperview(newSuperview: UIView?) {
+    override public func willMoveToSuperview(newSuperview: UIView?) {
         assert(bindScrollView != nil, "You should bind the pageControl with scroll view.")
         pageSize = bindScrollView.contentSize.width / CGFloat(numOfPages)
         setSublayers()
@@ -70,7 +75,7 @@ class GuttlerPageControl: UIView {
         self.layer.addSublayer(indicator)
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
@@ -120,7 +125,7 @@ class GuttlerPageControl: UIView {
         indicator.color = indicatorColor
     }
     
-    func scrollWithScrollView(scrollView: UIScrollView) {
+    public func scrollWithScrollView(scrollView: UIScrollView) {
         if scrollView.tracking == true && scrollView.dragging == true {
             isAuto = false
         }

@@ -1,0 +1,315 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C9FB085C1CA543F300949FBB /* BubblesLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FB08541CA543F200949FBB /* BubblesLayer.swift */; };
+		C9FB085D1CA543F300949FBB /* GuttlerPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FB08551CA543F200949FBB /* GuttlerPageControl.swift */; };
+		C9FB085E1CA543F300949FBB /* IndicatorLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FB08561CA543F200949FBB /* IndicatorLayer.swift */; };
+		C9FB08701CA545BF00949FBB /* RandomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FB086F1CA545BF00949FBB /* RandomColor.swift */; };
+		C9FB08731CA545D700949FBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FB08711CA545D700949FBB /* AppDelegate.swift */; };
+		C9FB08741CA545D700949FBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FB08721CA545D700949FBB /* ViewController.swift */; };
+		C9FB08771CA545E800949FBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9FB08751CA545E800949FBB /* LaunchScreen.storyboard */; };
+		C9FB08781CA545E800949FBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9FB08761CA545E800949FBB /* Main.storyboard */; };
+		C9FB087B1CA545F100949FBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9FB08791CA545F100949FBB /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C9FB083C1CA5433100949FBB /* GuttlerPageControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuttlerPageControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9FB08541CA543F200949FBB /* BubblesLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubblesLayer.swift; sourceTree = "<group>"; };
+		C9FB08551CA543F200949FBB /* GuttlerPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuttlerPageControl.swift; sourceTree = "<group>"; };
+		C9FB08561CA543F200949FBB /* IndicatorLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatorLayer.swift; sourceTree = "<group>"; };
+		C9FB086F1CA545BF00949FBB /* RandomColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomColor.swift; sourceTree = "<group>"; };
+		C9FB08711CA545D700949FBB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C9FB08721CA545D700949FBB /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C9FB08751CA545E800949FBB /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C9FB08761CA545E800949FBB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C9FB08791CA545F100949FBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C9FB087A1CA545F100949FBB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9FB08391CA5433000949FBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C9FB08331CA5433000949FBB = {
+			isa = PBXGroup;
+			children = (
+				C9FB083E1CA5433100949FBB /* GuttlerPageControl */,
+				C9FB08511CA5433A00949FBB /* Supporthings */,
+				C9FB083D1CA5433100949FBB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C9FB083D1CA5433100949FBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9FB083C1CA5433100949FBB /* GuttlerPageControl.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9FB083E1CA5433100949FBB /* GuttlerPageControl */ = {
+			isa = PBXGroup;
+			children = (
+				C9FB08521CA5434900949FBB /* Classes */,
+				C9FB08711CA545D700949FBB /* AppDelegate.swift */,
+				C9FB08721CA545D700949FBB /* ViewController.swift */,
+			);
+			path = GuttlerPageControl;
+			sourceTree = "<group>";
+		};
+		C9FB08511CA5433A00949FBB /* Supporthings */ = {
+			isa = PBXGroup;
+			children = (
+				C9FB08751CA545E800949FBB /* LaunchScreen.storyboard */,
+				C9FB08761CA545E800949FBB /* Main.storyboard */,
+				C9FB08791CA545F100949FBB /* Assets.xcassets */,
+				C9FB087A1CA545F100949FBB /* Info.plist */,
+			);
+			name = Supporthings;
+			path = GuttlerPageControl;
+			sourceTree = "<group>";
+		};
+		C9FB08521CA5434900949FBB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C9FB08551CA543F200949FBB /* GuttlerPageControl.swift */,
+				C9FB08561CA543F200949FBB /* IndicatorLayer.swift */,
+				C9FB08541CA543F200949FBB /* BubblesLayer.swift */,
+				C9FB086F1CA545BF00949FBB /* RandomColor.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C9FB083B1CA5433000949FBB /* GuttlerPageControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9FB084E1CA5433100949FBB /* Build configuration list for PBXNativeTarget "GuttlerPageControl" */;
+			buildPhases = (
+				C9FB08381CA5433000949FBB /* Sources */,
+				C9FB08391CA5433000949FBB /* Frameworks */,
+				C9FB083A1CA5433000949FBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GuttlerPageControl;
+			productName = GuttlerPageControl;
+			productReference = C9FB083C1CA5433100949FBB /* GuttlerPageControl.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9FB08341CA5433000949FBB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = oOatuo;
+				TargetAttributes = {
+					C9FB083B1CA5433000949FBB = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = C9FB08371CA5433000949FBB /* Build configuration list for PBXProject "GuttlerPageControl" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C9FB08331CA5433000949FBB;
+			productRefGroup = C9FB083D1CA5433100949FBB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9FB083B1CA5433000949FBB /* GuttlerPageControl */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C9FB083A1CA5433000949FBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9FB08771CA545E800949FBB /* LaunchScreen.storyboard in Resources */,
+				C9FB087B1CA545F100949FBB /* Assets.xcassets in Resources */,
+				C9FB08781CA545E800949FBB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9FB08381CA5433000949FBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9FB08741CA545D700949FBB /* ViewController.swift in Sources */,
+				C9FB08701CA545BF00949FBB /* RandomColor.swift in Sources */,
+				C9FB085E1CA543F300949FBB /* IndicatorLayer.swift in Sources */,
+				C9FB085D1CA543F300949FBB /* GuttlerPageControl.swift in Sources */,
+				C9FB08731CA545D700949FBB /* AppDelegate.swift in Sources */,
+				C9FB085C1CA543F300949FBB /* BubblesLayer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C9FB084C1CA5433100949FBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C9FB084D1CA5433100949FBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C9FB084F1CA5433100949FBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = GuttlerPageControl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = atuo.GuttlerPageControl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C9FB08501CA5433100949FBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = GuttlerPageControl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = atuo.GuttlerPageControl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9FB08371CA5433000949FBB /* Build configuration list for PBXProject "GuttlerPageControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9FB084C1CA5433100949FBB /* Debug */,
+				C9FB084D1CA5433100949FBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9FB084E1CA5433100949FBB /* Build configuration list for PBXNativeTarget "GuttlerPageControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9FB084F1CA5433100949FBB /* Debug */,
+				C9FB08501CA5433100949FBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9FB08341CA5433000949FBB /* Project object */;
+}

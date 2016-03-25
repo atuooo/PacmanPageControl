@@ -3,13 +3,13 @@
 Inspired by Bilibili:
 
 <p align="left" >
-  <img src="GuttlerPageControl/bilibili.png" alt="bilibili" title="bilibili">
+  <img src="Demo/bilibili.png" alt="bilibili" title="bilibili">
 </p>
 
 Demo:
 
 <p align="left" >
-  <img src="GuttlerPageControl/demo.gif" alt="demo" title="demo">
+  <img src="Demo/demo.gif" alt="demo" title="demo">
 </p>
 
 ## Install
