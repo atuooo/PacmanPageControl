@@ -28,7 +28,7 @@ pod 'GuttlerPageControl'
 
 ### Manually
 
-Clone this repo and throw the source files under `GuttlerPageControl` folder into your project to use it.
+Clone this repo and throw the source files under `Classes` folder into your project to use it.
 
 ## Example
 
