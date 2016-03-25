@@ -7,29 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C9FB085C1CA543F300949FBB /* BubblesLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FB08541CA543F200949FBB /* BubblesLayer.swift */; };
-		C9FB085D1CA543F300949FBB /* GuttlerPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FB08551CA543F200949FBB /* GuttlerPageControl.swift */; };
-		C9FB085E1CA543F300949FBB /* IndicatorLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FB08561CA543F200949FBB /* IndicatorLayer.swift */; };
-		C9FB08701CA545BF00949FBB /* RandomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FB086F1CA545BF00949FBB /* RandomColor.swift */; };
-		C9FB08731CA545D700949FBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FB08711CA545D700949FBB /* AppDelegate.swift */; };
-		C9FB08741CA545D700949FBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FB08721CA545D700949FBB /* ViewController.swift */; };
-		C9FB08771CA545E800949FBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9FB08751CA545E800949FBB /* LaunchScreen.storyboard */; };
-		C9FB08781CA545E800949FBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9FB08761CA545E800949FBB /* Main.storyboard */; };
-		C9FB087B1CA545F100949FBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9FB08791CA545F100949FBB /* Assets.xcassets */; };
+		C9FB08A01CA54E1100949FBB /* BubblesLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FB089C1CA54E1100949FBB /* BubblesLayer.swift */; };
+		C9FB08A11CA54E1100949FBB /* GuttlerPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FB089D1CA54E1100949FBB /* GuttlerPageControl.swift */; };
+		C9FB08A21CA54E1100949FBB /* IndicatorLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FB089E1CA54E1100949FBB /* IndicatorLayer.swift */; };
+		C9FB08A31CA54E1100949FBB /* RandomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FB089F1CA54E1100949FBB /* RandomColor.swift */; };
+		C9FB08A61CA54E3900949FBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FB08A41CA54E3900949FBB /* AppDelegate.swift */; };
+		C9FB08A71CA54E3900949FBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FB08A51CA54E3900949FBB /* ViewController.swift */; };
+		C9FB08AA1CA54E4D00949FBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9FB08A81CA54E4D00949FBB /* Assets.xcassets */; };
+		C9FB08B01CA54E5600949FBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9FB08AC1CA54E5600949FBB /* LaunchScreen.storyboard */; };
+		C9FB08B11CA54E5600949FBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9FB08AE1CA54E5600949FBB /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C9FB083C1CA5433100949FBB /* GuttlerPageControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuttlerPageControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9FB08541CA543F200949FBB /* BubblesLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubblesLayer.swift; sourceTree = "<group>"; };
-		C9FB08551CA543F200949FBB /* GuttlerPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuttlerPageControl.swift; sourceTree = "<group>"; };
-		C9FB08561CA543F200949FBB /* IndicatorLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatorLayer.swift; sourceTree = "<group>"; };
-		C9FB086F1CA545BF00949FBB /* RandomColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomColor.swift; sourceTree = "<group>"; };
-		C9FB08711CA545D700949FBB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C9FB08721CA545D700949FBB /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C9FB08751CA545E800949FBB /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		C9FB08761CA545E800949FBB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		C9FB08791CA545F100949FBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C9FB087A1CA545F100949FBB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9FB089C1CA54E1100949FBB /* BubblesLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BubblesLayer.swift; path = Classes/BubblesLayer.swift; sourceTree = SOURCE_ROOT; };
+		C9FB089D1CA54E1100949FBB /* GuttlerPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GuttlerPageControl.swift; path = Classes/GuttlerPageControl.swift; sourceTree = SOURCE_ROOT; };
+		C9FB089E1CA54E1100949FBB /* IndicatorLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IndicatorLayer.swift; path = Classes/IndicatorLayer.swift; sourceTree = SOURCE_ROOT; };
+		C9FB089F1CA54E1100949FBB /* RandomColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RandomColor.swift; path = Classes/RandomColor.swift; sourceTree = SOURCE_ROOT; };
+		C9FB08A41CA54E3900949FBB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Demo/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		C9FB08A51CA54E3900949FBB /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Demo/ViewController.swift; sourceTree = SOURCE_ROOT; };
+		C9FB08A81CA54E4D00949FBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Demo/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		C9FB08A91CA54E4D00949FBB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Demo/Info.plist; sourceTree = SOURCE_ROOT; };
+		C9FB08AD1CA54E5600949FBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Demo/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		C9FB08AF1CA54E5600949FBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Demo/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,9 +63,9 @@
 		C9FB083E1CA5433100949FBB /* GuttlerPageControl */ = {
 			isa = PBXGroup;
 			children = (
+				C9FB08A41CA54E3900949FBB /* AppDelegate.swift */,
+				C9FB08A51CA54E3900949FBB /* ViewController.swift */,
 				C9FB08521CA5434900949FBB /* Classes */,
-				C9FB08711CA545D700949FBB /* AppDelegate.swift */,
-				C9FB08721CA545D700949FBB /* ViewController.swift */,
 			);
 			path = GuttlerPageControl;
 			sourceTree = "<group>";
@@ -73,10 +73,10 @@
 		C9FB08511CA5433A00949FBB /* Supporthings */ = {
 			isa = PBXGroup;
 			children = (
-				C9FB08751CA545E800949FBB /* LaunchScreen.storyboard */,
-				C9FB08761CA545E800949FBB /* Main.storyboard */,
-				C9FB08791CA545F100949FBB /* Assets.xcassets */,
-				C9FB087A1CA545F100949FBB /* Info.plist */,
+				C9FB08AC1CA54E5600949FBB /* LaunchScreen.storyboard */,
+				C9FB08AE1CA54E5600949FBB /* Main.storyboard */,
+				C9FB08A81CA54E4D00949FBB /* Assets.xcassets */,
+				C9FB08A91CA54E4D00949FBB /* Info.plist */,
 			);
 			name = Supporthings;
 			path = GuttlerPageControl;
@@ -85,10 +85,10 @@
 		C9FB08521CA5434900949FBB /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				C9FB08551CA543F200949FBB /* GuttlerPageControl.swift */,
-				C9FB08561CA543F200949FBB /* IndicatorLayer.swift */,
-				C9FB08541CA543F200949FBB /* BubblesLayer.swift */,
-				C9FB086F1CA545BF00949FBB /* RandomColor.swift */,
+				C9FB089D1CA54E1100949FBB /* GuttlerPageControl.swift */,
+				C9FB089E1CA54E1100949FBB /* IndicatorLayer.swift */,
+				C9FB089C1CA54E1100949FBB /* BubblesLayer.swift */,
+				C9FB089F1CA54E1100949FBB /* RandomColor.swift */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -151,9 +151,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9FB08771CA545E800949FBB /* LaunchScreen.storyboard in Resources */,
-				C9FB087B1CA545F100949FBB /* Assets.xcassets in Resources */,
-				C9FB08781CA545E800949FBB /* Main.storyboard in Resources */,
+				C9FB08B01CA54E5600949FBB /* LaunchScreen.storyboard in Resources */,
+				C9FB08AA1CA54E4D00949FBB /* Assets.xcassets in Resources */,
+				C9FB08B11CA54E5600949FBB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,16 +164,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9FB08741CA545D700949FBB /* ViewController.swift in Sources */,
-				C9FB08701CA545BF00949FBB /* RandomColor.swift in Sources */,
-				C9FB085E1CA543F300949FBB /* IndicatorLayer.swift in Sources */,
-				C9FB085D1CA543F300949FBB /* GuttlerPageControl.swift in Sources */,
-				C9FB08731CA545D700949FBB /* AppDelegate.swift in Sources */,
-				C9FB085C1CA543F300949FBB /* BubblesLayer.swift in Sources */,
+				C9FB08A71CA54E3900949FBB /* ViewController.swift in Sources */,
+				C9FB08A31CA54E1100949FBB /* RandomColor.swift in Sources */,
+				C9FB08A21CA54E1100949FBB /* IndicatorLayer.swift in Sources */,
+				C9FB08A11CA54E1100949FBB /* GuttlerPageControl.swift in Sources */,
+				C9FB08A61CA54E3900949FBB /* AppDelegate.swift in Sources */,
+				C9FB08A01CA54E1100949FBB /* BubblesLayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C9FB08AC1CA54E5600949FBB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9FB08AD1CA54E5600949FBB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C9FB08AE1CA54E5600949FBB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9FB08AF1CA54E5600949FBB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C9FB084C1CA5433100949FBB /* Debug */ = {
@@ -266,7 +285,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				INFOPLIST_FILE = GuttlerPageControl/Info.plist;
+				INFOPLIST_FILE = demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = atuo.GuttlerPageControl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -280,7 +299,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				INFOPLIST_FILE = GuttlerPageControl/Info.plist;
+				INFOPLIST_FILE = demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = atuo.GuttlerPageControl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
