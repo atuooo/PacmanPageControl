@@ -36,7 +36,9 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         
         view.addSubview(scrollView)
         
+        // Just init with position and numOfpage
         guttlerPageControl = GuttlerPageControl(center: CGPoint(x: view.center.x, y: view.center.y+130), pages: numOfpage)
+        // Must bind pageControl with the scrollView
         guttlerPageControl.bindScrollView = scrollView
         view.addSubview(guttlerPageControl)
         
@@ -44,6 +46,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     }
     
     func scrollViewDidScroll(scrollView: UIScrollView) {
+        // Just invoke scrollWithScrollView(_:) in scrollViewDidScroll(_:)
         guttlerPageControl.scrollWithScrollView(scrollView)
     }
     
