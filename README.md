@@ -1,4 +1,4 @@
-# Guttler Page Control (swift)
+# Guttler Page Control (Swift)
 
 Inspired by Bilibili:
 

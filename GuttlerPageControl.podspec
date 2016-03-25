@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = "8.0"
 
-  s.source           = { :git => 'https://github.com/atuooo/GuttlerPageControl.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/atuooo/GuttlerPageControl.git', :tag => s.version.to_s, :commit => a82ecbd37d5798f6721f2f6629a049ab37a0257b }
   s.source_files     = 'Classes/*.swift'
   s.requires_arc     = true
 end
