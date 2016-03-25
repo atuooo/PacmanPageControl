@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'F9845E8C201317F22D5A705F'
+               BlueprintIdentifier = '6977234FC9C2E05A18F330A6'
                BlueprintName = 'RandomColorSwift'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'RandomColorSwift.framework'>
