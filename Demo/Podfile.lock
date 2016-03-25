@@ -1,0 +1,10 @@
+PODS:
+  - RandomColorSwift (0.1.0)
+
+DEPENDENCIES:
+  - RandomColorSwift
+
+SPEC CHECKSUMS:
+  RandomColorSwift: b2e95d6d3670def6d2f907ec7b7041138b268ac9
+
+COCOAPODS: 0.39.0

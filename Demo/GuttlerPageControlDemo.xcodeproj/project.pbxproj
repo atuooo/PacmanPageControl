@@ -1,0 +1,404 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C95BE9661CA5109700718580 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95BE9651CA5109700718580 /* AppDelegate.swift */; };
+		C95BE9681CA5109700718580 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95BE9671CA5109700718580 /* ViewController.swift */; };
+		C95BE96B1CA5109700718580 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C95BE9691CA5109700718580 /* Main.storyboard */; };
+		C95BE96D1CA5109800718580 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C95BE96C1CA5109800718580 /* Assets.xcassets */; };
+		C95BE9701CA5109800718580 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C95BE96E1CA5109800718580 /* LaunchScreen.storyboard */; };
+		C95BE97C1CA512DA00718580 /* BubblesLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95BE9791CA512DA00718580 /* BubblesLayer.swift */; };
+		C95BE97D1CA512DA00718580 /* GuttlerPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95BE97A1CA512DA00718580 /* GuttlerPageControl.swift */; };
+		C95BE97E1CA512DA00718580 /* IndicatorLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95BE97B1CA512DA00718580 /* IndicatorLayer.swift */; };
+		E72C1C4B8B8F3CB732E0A9F4 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BD34661BE738BAFC688756B /* Pods.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8BD34661BE738BAFC688756B /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A43FCC9AA934B05F40516DD6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		C95BE9621CA5109700718580 /* GuttlerPageControlDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuttlerPageControlDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C95BE9651CA5109700718580 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C95BE9671CA5109700718580 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C95BE96A1CA5109700718580 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C95BE96C1CA5109800718580 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = GuttlerPageControlDemo/Assets.xcassets; sourceTree = "<group>"; };
+		C95BE96F1CA5109800718580 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C95BE9711CA5109800718580 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = GuttlerPageControlDemo/Info.plist; sourceTree = "<group>"; };
+		C95BE9791CA512DA00718580 /* BubblesLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubblesLayer.swift; sourceTree = "<group>"; };
+		C95BE97A1CA512DA00718580 /* GuttlerPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuttlerPageControl.swift; sourceTree = "<group>"; };
+		C95BE97B1CA512DA00718580 /* IndicatorLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatorLayer.swift; sourceTree = "<group>"; };
+		C99879515B633B9C3F46C2A6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C95BE95F1CA5109700718580 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E72C1C4B8B8F3CB732E0A9F4 /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		36186D801B83A3F8DB9DF7CC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C99879515B633B9C3F46C2A6 /* Pods.debug.xcconfig */,
+				A43FCC9AA934B05F40516DD6 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		51C2619543D81EE83BBA2A74 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BD34661BE738BAFC688756B /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C95BE9591CA5109700718580 = {
+			isa = PBXGroup;
+			children = (
+				C95BE9641CA5109700718580 /* GuttlerPageControlDemo */,
+				C95BE9631CA5109700718580 /* Products */,
+				36186D801B83A3F8DB9DF7CC /* Pods */,
+				51C2619543D81EE83BBA2A74 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C95BE9631CA5109700718580 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C95BE9621CA5109700718580 /* GuttlerPageControlDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C95BE9641CA5109700718580 /* GuttlerPageControlDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C95BE9651CA5109700718580 /* AppDelegate.swift */,
+				C95BE9671CA5109700718580 /* ViewController.swift */,
+				C95BE9781CA510F900718580 /* Classes */,
+				C95BE9771CA510DF00718580 /* Supporthings */,
+			);
+			path = GuttlerPageControlDemo;
+			sourceTree = "<group>";
+		};
+		C95BE9771CA510DF00718580 /* Supporthings */ = {
+			isa = PBXGroup;
+			children = (
+				C95BE96E1CA5109800718580 /* LaunchScreen.storyboard */,
+				C95BE9691CA5109700718580 /* Main.storyboard */,
+				C95BE96C1CA5109800718580 /* Assets.xcassets */,
+				C95BE9711CA5109800718580 /* Info.plist */,
+			);
+			name = Supporthings;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		C95BE9781CA510F900718580 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C95BE97A1CA512DA00718580 /* GuttlerPageControl.swift */,
+				C95BE9791CA512DA00718580 /* BubblesLayer.swift */,
+				C95BE97B1CA512DA00718580 /* IndicatorLayer.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C95BE9611CA5109700718580 /* GuttlerPageControlDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C95BE9741CA5109800718580 /* Build configuration list for PBXNativeTarget "GuttlerPageControlDemo" */;
+			buildPhases = (
+				7E7B6C6F2667B00BD365C929 /* Check Pods Manifest.lock */,
+				C95BE95E1CA5109700718580 /* Sources */,
+				C95BE95F1CA5109700718580 /* Frameworks */,
+				C95BE9601CA5109700718580 /* Resources */,
+				70B7826C96526263078CBDCD /* Embed Pods Frameworks */,
+				84B9291E443ED6951EEA0D31 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GuttlerPageControlDemo;
+			productName = GuttlerPageControlDemo;
+			productReference = C95BE9621CA5109700718580 /* GuttlerPageControlDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C95BE95A1CA5109700718580 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = oOatuo;
+				TargetAttributes = {
+					C95BE9611CA5109700718580 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = C95BE95D1CA5109700718580 /* Build configuration list for PBXProject "GuttlerPageControlDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C95BE9591CA5109700718580;
+			productRefGroup = C95BE9631CA5109700718580 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C95BE9611CA5109700718580 /* GuttlerPageControlDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C95BE9601CA5109700718580 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C95BE9701CA5109800718580 /* LaunchScreen.storyboard in Resources */,
+				C95BE96D1CA5109800718580 /* Assets.xcassets in Resources */,
+				C95BE96B1CA5109700718580 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		70B7826C96526263078CBDCD /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E7B6C6F2667B00BD365C929 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		84B9291E443ED6951EEA0D31 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C95BE95E1CA5109700718580 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C95BE97D1CA512DA00718580 /* GuttlerPageControl.swift in Sources */,
+				C95BE9681CA5109700718580 /* ViewController.swift in Sources */,
+				C95BE9661CA5109700718580 /* AppDelegate.swift in Sources */,
+				C95BE97E1CA512DA00718580 /* IndicatorLayer.swift in Sources */,
+				C95BE97C1CA512DA00718580 /* BubblesLayer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C95BE9691CA5109700718580 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C95BE96A1CA5109700718580 /* Base */,
+			);
+			name = Main.storyboard;
+			path = GuttlerPageControlDemo;
+			sourceTree = "<group>";
+		};
+		C95BE96E1CA5109800718580 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C95BE96F1CA5109800718580 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = GuttlerPageControlDemo;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C95BE9721CA5109800718580 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C95BE9731CA5109800718580 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C95BE9751CA5109800718580 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C99879515B633B9C3F46C2A6 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GuttlerPageControlDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = atuo.GuttlerPageControlDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C95BE9761CA5109800718580 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A43FCC9AA934B05F40516DD6 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GuttlerPageControlDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = atuo.GuttlerPageControlDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C95BE95D1CA5109700718580 /* Build configuration list for PBXProject "GuttlerPageControlDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C95BE9721CA5109800718580 /* Debug */,
+				C95BE9731CA5109800718580 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C95BE9741CA5109800718580 /* Build configuration list for PBXNativeTarget "GuttlerPageControlDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C95BE9751CA5109800718580 /* Debug */,
+				C95BE9761CA5109800718580 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C95BE95A1CA5109700718580 /* Project object */;
+}

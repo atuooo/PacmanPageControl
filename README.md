@@ -36,7 +36,7 @@ Clone this repo and throw the source files under `GuttlerPageControl` folder int
 ```swift
 import GuttlerPageControl
 
-// Just init with position and  numOfpage
+// Just init with position and numOfpage
 let guttlerPageControl = GuttlerPageControl(center: view.center, pages: numOfpage)
 
 // Must bind pageControl with the scrollView 
