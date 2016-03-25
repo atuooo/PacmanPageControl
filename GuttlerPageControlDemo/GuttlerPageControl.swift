@@ -42,15 +42,10 @@ public class GuttlerPageControl: UIView {
         
         self.layer.masksToBounds = true
         
-        #if swift(>=2.2)
-            let tap = UITapGestureRecognizer(target: self, action: #selector(didTap(_:)))
-            let pan = UIPanGestureRecognizer(target: self, action: #selector(didPan(_:)))
-        #else
-            let tap = UITapGestureRecognizer(target: self, action: "didTap:")
-            let pan = UIPanGestureRecognizer(target: self, action: "didPan:")
-        #endif
-        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(didTap(_:)))
         self.addGestureRecognizer(tap)
+        
+        let pan = UIPanGestureRecognizer(target: self, action: #selector(didPan(_:)))
         self.addGestureRecognizer(pan)
     }
     

@@ -3,13 +3,13 @@
 Inspired by Bilibili:
 
 <p align="left" >
-  <img src="bilibili.png" alt="bilibili" title="bilibili">
+  <img src="GuttlerPageControl/bilibili.png" alt="bilibili" title="bilibili">
 </p>
 
 Demo:
 
 <p align="left" >
-  <img src="demo.gif" alt="demo" title="demo">
+  <img src="GuttlerPageControl/demo.gif" alt="demo" title="demo">
 </p>
 
 ## Install
@@ -21,7 +21,6 @@ The easiest way to use `GuttlerPageControl` is installing it by [CocoaPods](http
 ```ruby
 source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
-# platform :osx, '10.10'
 use_frameworks!
 
 pod 'GuttlerPageControl'

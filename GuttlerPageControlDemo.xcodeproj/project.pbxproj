@@ -67,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				C95BE9641CA5109700718580 /* GuttlerPageControlDemo */,
+				C95BE9771CA510DF00718580 /* Supporthings */,
 				C95BE9631CA5109700718580 /* Products */,
 				36186D801B83A3F8DB9DF7CC /* Pods */,
 				51C2619543D81EE83BBA2A74 /* Frameworks */,
@@ -87,7 +88,6 @@
 				C95BE9651CA5109700718580 /* AppDelegate.swift */,
 				C95BE9671CA5109700718580 /* ViewController.swift */,
 				C95BE9781CA510F900718580 /* Classes */,
-				C95BE9771CA510DF00718580 /* Supporthings */,
 			);
 			path = GuttlerPageControlDemo;
 			sourceTree = "<group>";
@@ -101,7 +101,6 @@
 				C95BE9711CA5109800718580 /* Info.plist */,
 			);
 			name = Supporthings;
-			path = ..;
 			sourceTree = "<group>";
 		};
 		C95BE9781CA510F900718580 /* Classes */ = {

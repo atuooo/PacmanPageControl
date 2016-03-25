@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'GuttlerPageControl'
-  s.version          = '0.1.1'
+  s.version          = '0.0.1'
   s.summary          = 'A cute PageControl in Swift'
 
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
