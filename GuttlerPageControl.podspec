@@ -13,7 +13,5 @@ Pod::Spec.new do |s|
 
   s.source           = { :git => 'https://github.com/atuooo/GuttlerPageControl.git', :tag => s.version.to_s }
   s.source_files     = 'GuttlerPageControl/*.swift'
-  s.frameworks       = 'UIKit'
   s.requires_arc     = true
-  s.platform         = :ios
 end
