@@ -10,40 +10,43 @@ import UIKit
 
 class BubblesLayer: CALayer {
     
-    var size = Int()
-    var bubbleGap = Int()
-    var indicatorSize = Int()
-    var colors : [UIColor]!
+    var size = 0
+    var bubbleGap = 0
+    var indicatorSize = 0
+    var colors = [UIColor]()
     
-    private var count : Int!
+    private var count = 0
     
     var indicatorIndex = 0 {
         didSet{
-            self.setNeedsDisplay()
+            setNeedsDisplay()
         }
     }
     
     init(bubbles: Int) {
         super.init()
         count = bubbles
-        colors = Array(count: count, repeatedValue: randomColor(hue: .Purple, luminosity: .Light))
+        colors = Array(repeating: randomColor(hue: .purple, luminosity: .light), count: count)
         
-        self.contentsScale = UIScreen.mainScreen().scale
+        contentsScale = UIScreen.main.scale
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func drawInContext(ctx: CGContext) {        
+    override func draw(in ctx: CGContext) {
+        
         for i in 0 ..< count {
+            
             if i != indicatorIndex {
+                
                 let bubbleRect = CGRect(x: (indicatorSize-size)/2 + i * bubbleGap, y: Int(bounds.midY)-size/2, width: size, height: size)
                 
-                let color = randomColor(hue: .Random, luminosity: .Light)
+                let color = randomColor(hue: .random, luminosity: .light)
                 colors[i] = color
-                CGContextSetFillColorWithColor(ctx, color.CGColor)
-                CGContextFillEllipseInRect(ctx, bubbleRect)
+                ctx.setFillColor(color.cgColor)
+                ctx.fillEllipse(in: bubbleRect)
             }
         }
     }

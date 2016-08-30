@@ -18,9 +18,9 @@ public class GuttlerPageControl: UIView {
     private var bubbleGap   = Int(17)
     
     // snake
+    private var indicator      : IndicatorLayer!
     private var indicatorSize = Int(16)
     private var indicatorColor = UIColor()
-    private var indicator      : IndicatorLayer!
     
     // page Control
     private var pageSize     : CGFloat!
@@ -35,26 +35,20 @@ public class GuttlerPageControl: UIView {
     // MARK: - init
     
     public init(center: CGPoint, pages: Int) {
+        super.init(frame: CGRect(origin: CGPoint.zero, size: CGSize(width: (bubbleGap * (pages-1) + indicatorSize), height: indicatorSize)))
         numOfPages = pages
-        let rect = CGRect(origin: CGPointZero, size: CGSize(width: (bubbleGap * (numOfPages-1) + indicatorSize), height: indicatorSize))
-        super.init(frame: rect)
         self.center = center
         
-        self.layer.masksToBounds = true
+        layer.masksToBounds = true
         
-        #if swift(>=2.2)
-            let tap = UITapGestureRecognizer(target: self, action: #selector(didTap(_:)))
-            let pan = UIPanGestureRecognizer(target: self, action: #selector(didPan(_:)))
-        #else
-            let tap = UITapGestureRecognizer(target: self, action: "didTap:")
-            let pan = UIPanGestureRecognizer(target: self, action: "didPan:")
-        #endif
+        let tap = UITapGestureRecognizer(target: self, action: #selector(didTap(_:)))
+        let pan = UIPanGestureRecognizer(target: self, action: #selector(didPan(_:)))
         
-        self.addGestureRecognizer(tap)
-        self.addGestureRecognizer(pan)
+        addGestureRecognizer(tap)
+        addGestureRecognizer(pan)
     }
     
-    override public func willMoveToSuperview(newSuperview: UIView?) {
+    override public func willMove(toSuperview newSuperview: UIView?) {
         assert(bindScrollView != nil, "You should bind the pageControl with scroll view.")
         pageSize = bindScrollView.contentSize.width / CGFloat(numOfPages)
         setSublayers()
@@ -65,14 +59,14 @@ public class GuttlerPageControl: UIView {
         bubbleLayer.size = bubbleSize
         bubbleLayer.bubbleGap = bubbleGap
         bubbleLayer.indicatorSize = indicatorSize
-        bubbleLayer.frame = CGRect(origin: CGPointZero, size: frame.size)
+        bubbleLayer.frame = CGRect(origin: CGPoint.zero, size: frame.size)
         bubbleLayer.setNeedsDisplay()
-        self.layer.addSublayer(bubbleLayer)
+        layer.addSublayer(bubbleLayer)
         
         indicator = IndicatorLayer(size: indicatorSize, color: bubbleLayer.colors[currentIndex])
-        indicator.frame = CGRect(origin: CGPointZero, size: CGSize(width: indicatorSize, height: indicatorSize))
+        indicator.frame = CGRect(origin: CGPoint.zero, size: CGSize(width: indicatorSize, height: indicatorSize))
         indicator.setNeedsDisplay()
-        self.layer.addSublayer(indicator)
+        layer.addSublayer(indicator)
     }
     
     required public init?(coder aDecoder: NSCoder) {
@@ -81,9 +75,9 @@ public class GuttlerPageControl: UIView {
     
     // MARK: - Gesture
     
-    func didTap(ges: UITapGestureRecognizer) {
-        let location = ges.locationInView(self)
-        if CGRectContainsPoint(self.bounds, location) {
+    func didTap(_ ges: UITapGestureRecognizer) {
+        let location = ges.location(in: self)
+        if bounds.contains(location) {
             let index = Int(location.x) / bubbleGap
             
             if index != currentIndex {
@@ -94,9 +88,9 @@ public class GuttlerPageControl: UIView {
         }
     }
     
-    func didPan(ges: UIPanGestureRecognizer) {
-        let location = ges.locationInView(self)
-        if CGRectContainsPoint(self.bounds, location) {
+    func didPan(_ ges: UIPanGestureRecognizer) {
+        let location = ges.location(in: self)
+        if bounds.contains(location) {
             let index = Int(location.x) / bubbleGap
             
             if index != currentIndex {
@@ -108,7 +102,7 @@ public class GuttlerPageControl: UIView {
     }
     
     // MARK: - Scroll
-    private func scrollToIndex(index: Int) {
+    private func scrollToIndex(_ index: Int) {
         bubbleLayer.indicatorIndex = index
         lastIndex = currentIndex
         currentIndex = index
@@ -125,15 +119,16 @@ public class GuttlerPageControl: UIView {
         indicator.color = indicatorColor
     }
     
-    public func scrollWithScrollView(scrollView: UIScrollView) {
-        if scrollView.tracking == true && scrollView.dragging == true {
+    public func scrollWithScrollView(_ scrollView: UIScrollView) {
+        if scrollView.isTracking == true && scrollView.isDragging == true {
             isAuto = false
         }
         
-        if scrollView.tracking == false && !isAuto {
+        if scrollView.isTracking == false && !isAuto {
             let offset = scrollView.contentOffset.x / pageSize - CGFloat(currentIndex)
             
             if offset > 0.5 || offset < -0.5 && isMoved == false {
+                
                 let index = currentIndex + Int(2 * offset)
                 currentIndex = min(numOfPages-1, max(index, 0))
                 bubbleLayer.indicatorIndex = currentIndex
@@ -142,6 +137,7 @@ public class GuttlerPageControl: UIView {
                 if indicator.direction == .left && offset > 0.5 {
                     indicator.direction = .right
                 }
+                
                 if indicator.direction == .right && offset < 0.5 {
                     indicator.direction = .left
                 }
@@ -150,6 +146,7 @@ public class GuttlerPageControl: UIView {
                 indicator.color = bubbleLayer.colors[currentIndex]
                 isMoved = true
             }
+            
         } else {
             isMoved = false
         }

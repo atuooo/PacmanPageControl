@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "9A241C69F4F96F7C68859FEA5037BED71D5242E2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "44EC3EE3BD179BFBC1C3BC4A7542E19B141B1FD3" : 9223372036854775807,
+    "9A241C69F4F96F7C68859FEA5037BED71D5242E2" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A65C90BB-ECD0-4D9C-8A1D-363B4DEB113E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "44EC3EE3BD179BFBC1C3BC4A7542E19B141B1FD3" : "",
+    "9A241C69F4F96F7C68859FEA5037BED71D5242E2" : "GuttlerPageControl\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "GuttlerPageControl",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "GuttlerPageControl.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/git.coding.net\/oOatuo\/ATsDemo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "44EC3EE3BD179BFBC1C3BC4A7542E19B141B1FD3"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/atuooo\/GuttlerPageControl.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9A241C69F4F96F7C68859FEA5037BED71D5242E2"
+    }
+  ]
+}

@@ -24,13 +24,13 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         scrollView.center = view.center
         
         scrollView.showsHorizontalScrollIndicator = false
-        scrollView.pagingEnabled = true
+        scrollView.isPagingEnabled = true
         scrollView.bounces = true
         scrollView.delegate = self
         
         for i in 0..<numOfpage {
             let subview = UIView(frame: CGRect(x: pageSize * CGFloat(i), y: 0, width: pageSize, height: scrollView.frame.height))
-            subview.backgroundColor = randomColor(hue: .Blue, luminosity: .Bright)
+            subview.backgroundColor = randomColor(hue: .blue, luminosity: .bright)
             scrollView.addSubview(subview)
         }
         
@@ -45,7 +45,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    func scrollViewDidScroll(scrollView: UIScrollView) {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
         // Just invoke scrollWithScrollView(_:) in scrollViewDidScroll(_:)
         guttlerPageControl.scrollWithScrollView(scrollView)
     }
