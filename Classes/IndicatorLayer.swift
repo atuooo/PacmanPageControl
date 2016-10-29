@@ -35,7 +35,7 @@ class IndicatorLayer: CALayer {
         contentsScale = UIScreen.main.scale
     }
     
-    override init(layer: AnyObject) {
+    override init(layer: Any) {
         super.init(layer: layer)
     }
     
@@ -70,8 +70,8 @@ class IndicatorLayer: CALayer {
         ctx.setAllowsAntialiasing(true)
         
         ctx.beginPath()
-        ctx.addArc(centerX: point.x, y: point.y, radius: CGFloat(size/2), startAngle: startAngle, endAngle: endAngle, clockwise: 0)
-        ctx.addLineTo(x: mouthX, y: point.y)
+        ctx.addArc(center: point, radius: CGFloat(size/2), startAngle: startAngle, endAngle: endAngle, clockwise: false)
+        ctx.addLine(to: CGPoint(x: mouthX, y: point.y))
         ctx.closePath()
         
         ctx.setStrokeColor(UIColor.white.cgColor)
@@ -82,7 +82,7 @@ class IndicatorLayer: CALayer {
         
         // draw eye
         ctx.beginPath()
-        ctx.addEllipse(inRect: eyeRect)
+        ctx.addEllipse(in: eyeRect)
         ctx.setFillColor(UIColor.white.cgColor)
         ctx.fillPath()
     }
