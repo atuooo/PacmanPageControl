@@ -1,29 +1,29 @@
-# Guttler Page Control (Swift)
+# PacmanPageControl (Swift)
 
 Inspired by Bilibili:
 
 <p align="left" >
-  <img src="Demo/bilibili.png" alt="bilibili" title="bilibili">
+  <img src="bilibili.png" alt="bilibili" title="bilibili">
 </p>
 
 Demo:
 
 <p align="left" >
-  <img src="Demo/demo.gif" alt="demo" title="demo">
+  <img src="demo.gif" alt="demo" title="demo">
 </p>
 
 ## Install
 
 ### CocoaPods
 
-The easiest way to use `GuttlerPageControl` is installing it by [CocoaPods](http://cocoapods.org). Add these lines to your Podfile:
+The easiest way to use `PacmanPageControl` is installing it by [CocoaPods](http://cocoapods.org). Add these lines to your Podfile:
 
 ```ruby
 source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
 use_frameworks!
 
-pod 'GuttlerPageControl', '~> 0.1.1'
+pod 'PacmanPageControl', '~> 0.1.1'
 ```
 
 ### Manually
@@ -33,17 +33,16 @@ Clone this repo and throw the source files under `Classes` folder into your proj
 ## Example
 
 ```swift
-import GuttlerPageControl
+import PacmanPageControl
 
-// Just init with position and numOfpage
-let guttlerPageControl = GuttlerPageControl(center: view.center, pages: numOfpage)
+let pacman = PacmanPageControl(frame: pacmanFrame, pageCount: pageCount)
 
-// Must bind pageControl with the scrollView 
-guttlerPageControl.bindScrollView = scrollView
+func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    pacman.scroll(with: scrollView)
+}
 
-// Just invoke scrollWithScrollView(_:) in scrollViewDidScroll(_:)
-func scrollViewDidScroll(scrollView: UIScrollView) {
-    guttlerPageControl.scrollWithScrollView(scrollView)
+func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+    pacman.lastContentOffsetX = scrollView.contentOffset.x
 }
 
 ```
