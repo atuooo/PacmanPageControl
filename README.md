@@ -1,6 +1,4 @@
-# PacmanPageControl (Swift)
-
-# PacmanPageControl
+# PacmanPageControl 
 
 Let's play Pac-Man:
 
