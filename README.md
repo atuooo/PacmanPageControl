@@ -26,7 +26,7 @@ platform :ios, '8.0'
 use_frameworks!
 
 target 'MyApp' do
-	pod 'PacmanPageControl', '~> 0.2.0'
+  pod 'PacmanPageControl', '~> 0.2.0'
 end
 
 ```
