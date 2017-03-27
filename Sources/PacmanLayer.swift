@@ -53,7 +53,7 @@ class PacmanLayer: CALayer {
         
         // draw eye
         
-        let eyeDiameter = 0.16 * frame.width
+        let eyeDiameter = 0.15 * frame.width
         let eyeRect = CGRect(x: (frame.width - eyeDiameter) / 2, y: frame.height / 4 - eyeDiameter / 2, width: eyeDiameter, height: eyeDiameter)
         
         ctx.beginPath()

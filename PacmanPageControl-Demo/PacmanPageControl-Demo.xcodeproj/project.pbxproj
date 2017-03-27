@@ -61,10 +61,10 @@
 		2770C1871E86B35A000FF6E3 /* PacmanPageControl-Demo */ = {
 			isa = PBXGroup;
 			children = (
+				2770C19B1E86B43D000FF6E3 /* Sources */,
 				2770C1881E86B35A000FF6E3 /* AppDelegate.swift */,
 				2770C18A1E86B35A000FF6E3 /* ViewController.swift */,
 				2770C18C1E86B35A000FF6E3 /* Main.storyboard */,
-				2770C19B1E86B43D000FF6E3 /* Sources */,
 			);
 			path = "PacmanPageControl-Demo";
 			sourceTree = "<group>";

@@ -50,7 +50,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         view.addSubview(pacman1)
         
         // custom
-        pacmanFrame.origin.y += 30
+        pacmanFrame.origin.y += 22
         
         pacman2 = PacmanPageControl(frame: pacmanFrame, pageCount: pageCount)
         pacman2.dotColorStyle = .same(.cyan)
@@ -59,13 +59,13 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         view.addSubview(pacman2)
         
         // custom
-        pacmanFrame.origin.y += 50
+        pacmanFrame.origin.y += 30
         
         pacman3 = PacmanPageControl(frame: pacmanFrame, pageCount: pageCount)
         pacman3.dotDiameter = 10
         pacman3.pacmanDiameter = 20
 //        pacman3.dotColorStyle = .different([.purple, .orange, .cyan, .magenta])
-        pacman3.dotColorStyle = .random(hue: .monochrome, luminosity: .light)
+        pacman3.dotColorStyle = .random(hue: .orange, luminosity: .light)
         pacman3.pacmanColorStyle = .changeWithDot
         view.addSubview(pacman3)
     }
