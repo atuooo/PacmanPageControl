@@ -24,9 +24,17 @@ platform :ios, '8.0'
 use_frameworks!
 
 target 'MyApp' do
-  pod 'PacmanPageControl', '~> 0.2.2'
+  pod 'PacmanPageControl', '~> 0.2.3'
 end
 
+```
+
+### Carthage
+
+[Carthage](https://github.com/Carthage/Carthage) is also supported:
+
+```ogdl
+github "atuooo/PacmanPageControl"
 ```
 
 ### Manually
