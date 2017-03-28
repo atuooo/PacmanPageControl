@@ -1,14 +1,30 @@
 //
 //  PacmanPageControl.swift
-//  PacmanPageControl-Demo
+//  PacmanPageControl
 //
-//  Created by ooatuoo on 2017/3/25.
-//  Copyright © 2017年 ooatuoo. All rights reserved.
+//  Copyright (c) 2017 oOatuo (aaatuooo@gmail.com)
 //
+//  Permission is hereby granted, free of charge, to any person obtaining a copy
+//  of this software and associated documentation files (the "Software"), to deal
+//  in the Software without restriction, including without limitation the rights
+//  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+//  copies of the Software, and to permit persons to whom the Software is
+//  furnished to do so, subject to the following conditions:
+//
+//  The above copyright notice and this permission notice shall be included in all
+//  copies or substantial portions of the Software.
+//
+//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+//  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+//  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+//  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+//  SOFTWARE.
 
 import UIKit
 
-class PacmanPageControl: UIView {
+public class PacmanPageControl: UIView {
 
     public var dotColorStyle: DotColorStyle = .random(hue: .random, luminosity: .light)
     public var pacmanColorStyle: PacmanColorStyle = .changeWithDot
@@ -28,13 +44,13 @@ class PacmanPageControl: UIView {
     fileprivate var pageCount: Int!
     fileprivate var dotColors: [UIColor] = []
     
-    enum DotColorStyle {
+    public enum DotColorStyle {
         case same(UIColor)
         case different([UIColor])
         case random(hue: Hue, luminosity: Luminosity)
     }
     
-    enum PacmanColorStyle {
+    public enum PacmanColorStyle {
         case fixed(UIColor)
         case changeWithDot
     }
@@ -45,7 +61,7 @@ class PacmanPageControl: UIView {
         self.pageCount = pageCount
     }
     
-    override func didMoveToSuperview() {
+    override public func didMoveToSuperview() {
         super.didMoveToSuperview()
 
         if dotInterval == 0 {
@@ -148,7 +164,7 @@ class PacmanPageControl: UIView {
         }
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }

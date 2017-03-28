@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "PacmanPageControl"
-  s.version          = "0.2.0"
+  s.version          = "0.2.1"
   s.summary          = <<-DESC
                        Let's play Pac-Man.
                        DESC
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
                         :tag => s.version
                        }
 
-  s.source_files     = "Sources/*.swift"
-  s.frameworks       = "UIKit", "Foundation"
-  s.requires_arc     = true
+  s.source_files        = "Sources/*.swift"
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3.0' }
+  s.requires_arc        = true
 end
