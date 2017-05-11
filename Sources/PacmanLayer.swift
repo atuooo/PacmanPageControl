@@ -49,7 +49,7 @@ class PacmanLayer: CALayer {
         let center = CGPoint(x: frame.width / 2, y: frame.height / 2)
         let theAngle = calculateAngle(with: factor)
         
-        let currentAngle = direction == .right ? theAngle : theAngle - CGFloat(M_PI)
+        let currentAngle = direction == .right ? theAngle : theAngle - CGFloat.pi
         
         ctx.setShouldAntialias(true)
         ctx.setAllowsAntialiasing(true)
@@ -80,9 +80,9 @@ class PacmanLayer: CALayer {
     
     fileprivate func calculateAngle(with x: CGFloat) -> CGFloat {
         
-        let minAngle = CGFloat(27 / 180 * M_PI)
-        let maxAngle = CGFloat(49 / 180 * M_PI)
-        let zeroAngle = CGFloat(3 / 180 * M_PI)
+        let minAngle = CGFloat(27 / 180 * CGFloat.pi)
+        let maxAngle = CGFloat(49 / 180 * CGFloat.pi)
+        let zeroAngle = CGFloat(3 / 180 * CGFloat.pi)
         let diffAngle = maxAngle - minAngle
         
         if x <= 0.5 {

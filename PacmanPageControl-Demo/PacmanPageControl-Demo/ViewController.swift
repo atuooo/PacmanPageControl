@@ -53,7 +53,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         pacmanFrame.origin.y += 22
         
         pacman2 = PacmanPageControl(frame: pacmanFrame, pageCount: pageCount)
-        pacman2.dotColorStyle = .same(.cyan)
+        pacman2.dotColorStyle = .same(.cyan)    
         pacman2.pacmanColorStyle = .fixed(.orange)
         
         view.addSubview(pacman2)
