@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "PacmanPageControl"
-  s.version          = "0.2.3"
+  s.version          = "0.2.4"
   s.summary          = <<-DESC
                        Let's play Pac-Man.
                        DESC
