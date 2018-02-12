@@ -38,7 +38,7 @@ pacman.scrollView = scrollView
 view.addSubview(pacman)
 ```
 
-You can also set it in Interface Build
+**You can also set it in Interface Builder.**
 
 ## Acknowledgements
 
