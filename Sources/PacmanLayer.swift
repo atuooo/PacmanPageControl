@@ -25,8 +25,7 @@
 import UIKit
 
 class PacmanLayer: CALayer {
-    
-    public var color: UIColor!
+    public var color: UIColor! 
     public var direction: ScrollDirection = .right
     
     public var factor: CGFloat = 0 {
@@ -45,9 +44,8 @@ class PacmanLayer: CALayer {
     }
     
     override func draw(in ctx: CGContext) {
-        
         let center = CGPoint(x: frame.width / 2, y: frame.height / 2)
-        let theAngle = calculateAngle(with: factor)
+        let theAngle = calculateAngle(with: direction == .left ? 1-factor : factor)
         
         let currentAngle = direction == .right ? theAngle : theAngle - CGFloat.pi
         
@@ -79,7 +77,6 @@ class PacmanLayer: CALayer {
     }
     
     fileprivate func calculateAngle(with x: CGFloat) -> CGFloat {
-        
         let minAngle = CGFloat(27 / 180 * CGFloat.pi)
         let maxAngle = CGFloat(49 / 180 * CGFloat.pi)
         let zeroAngle = CGFloat(3 / 180 * CGFloat.pi)

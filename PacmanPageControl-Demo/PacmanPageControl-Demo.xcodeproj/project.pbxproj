@@ -14,6 +14,7 @@
 		2770C1931E86B35A000FF6E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2770C1911E86B35A000FF6E3 /* LaunchScreen.storyboard */; };
 		2770C19D1E86B456000FF6E3 /* PacmanPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2770C19C1E86B456000FF6E3 /* PacmanPageControl.swift */; };
 		2770C19F1E86BA12000FF6E3 /* PacmanLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2770C19E1E86BA12000FF6E3 /* PacmanLayer.swift */; };
+		988C6EC2202FF29A00030206 /* PacmanPageControl.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 988C6EC1202FF29A00030206 /* PacmanPageControl.podspec */; };
 		98EF7F9F1E86D639002929B6 /* RandomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EF7F9E1E86D639002929B6 /* RandomColor.swift */; };
 		98EF7FC71E8A196B002929B6 /* PacmanPageControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 98EF7FC51E8A196B002929B6 /* PacmanPageControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		98EF7FCA1E8A196B002929B6 /* PacmanPageControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98EF7FC31E8A196B002929B6 /* PacmanPageControl.framework */; };
@@ -57,6 +58,7 @@
 		2770C1941E86B35A000FF6E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2770C19C1E86B456000FF6E3 /* PacmanPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PacmanPageControl.swift; sourceTree = "<group>"; };
 		2770C19E1E86BA12000FF6E3 /* PacmanLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PacmanLayer.swift; sourceTree = "<group>"; };
+		988C6EC1202FF29A00030206 /* PacmanPageControl.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = PacmanPageControl.podspec; path = ../PacmanPageControl.podspec; sourceTree = "<group>"; };
 		98EF7F9E1E86D639002929B6 /* RandomColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomColor.swift; sourceTree = "<group>"; };
 		98EF7FC31E8A196B002929B6 /* PacmanPageControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PacmanPageControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98EF7FC51E8A196B002929B6 /* PacmanPageControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PacmanPageControl.h; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 		2770C17C1E86B35A000FF6E3 = {
 			isa = PBXGroup;
 			children = (
+				988C6EC1202FF29A00030206 /* PacmanPageControl.podspec */,
 				2770C1871E86B35A000FF6E3 /* PacmanPageControl-Demo */,
 				2770C19A1E86B361000FF6E3 /* Supporthings */,
 				98EF7FC41E8A196B002929B6 /* PacmanPageControl */,
@@ -201,15 +204,17 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = ooatuoo;
 				TargetAttributes = {
 					2770C1841E86B35A000FF6E3 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = Q9PYPYJJT9;
 						ProvisioningStyle = Automatic;
 					};
 					98EF7FC21E8A196B002929B6 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -241,6 +246,7 @@
 				2770C1931E86B35A000FF6E3 /* LaunchScreen.storyboard in Resources */,
 				2770C1901E86B35A000FF6E3 /* Assets.xcassets in Resources */,
 				2770C18E1E86B35A000FF6E3 /* Main.storyboard in Resources */,
+				988C6EC2202FF29A00030206 /* PacmanPageControl.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,7 +321,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -323,7 +331,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -364,7 +376,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -372,7 +386,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -402,11 +420,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Q9PYPYJJT9;
 				INFOPLIST_FILE = "PacmanPageControl-Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ooatuoo.PacmanPageControl-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -415,11 +434,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Q9PYPYJJT9;
 				INFOPLIST_FILE = "PacmanPageControl-Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ooatuoo.PacmanPageControl-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -438,7 +458,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ooatuoo.PacmanPageControl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -460,7 +481,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ooatuoo.PacmanPageControl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -495,6 +517,7 @@
 				98EF7FCD1E8A196B002929B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
