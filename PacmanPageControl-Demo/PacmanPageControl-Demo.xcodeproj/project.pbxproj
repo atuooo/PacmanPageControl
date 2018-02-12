@@ -22,6 +22,7 @@
 		98EF7FD01E8A1DCA002929B6 /* PacmanPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2770C19C1E86B456000FF6E3 /* PacmanPageControl.swift */; };
 		98EF7FD11E8A1DCA002929B6 /* PacmanLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2770C19E1E86BA12000FF6E3 /* PacmanLayer.swift */; };
 		98EF7FD21E8A1DCA002929B6 /* RandomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EF7F9E1E86D639002929B6 /* RandomColor.swift */; };
+		98F3FBB42031669300B75D5C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 98F3FBB32031669300B75D5C /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		98EF7FC31E8A196B002929B6 /* PacmanPageControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PacmanPageControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98EF7FC51E8A196B002929B6 /* PacmanPageControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PacmanPageControl.h; sourceTree = "<group>"; };
 		98EF7FC61E8A196B002929B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98F3FBB32031669300B75D5C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 		2770C17C1E86B35A000FF6E3 = {
 			isa = PBXGroup;
 			children = (
+				98F3FBB32031669300B75D5C /* README.md */,
 				988C6EC1202FF29A00030206 /* PacmanPageControl.podspec */,
 				2770C1871E86B35A000FF6E3 /* PacmanPageControl-Demo */,
 				2770C19A1E86B361000FF6E3 /* Supporthings */,
@@ -245,6 +248,7 @@
 			files = (
 				2770C1931E86B35A000FF6E3 /* LaunchScreen.storyboard in Resources */,
 				2770C1901E86B35A000FF6E3 /* Assets.xcassets in Resources */,
+				98F3FBB42031669300B75D5C /* README.md in Resources */,
 				2770C18E1E86B35A000FF6E3 /* Main.storyboard in Resources */,
 				988C6EC2202FF29A00030206 /* PacmanPageControl.podspec in Resources */,
 			);

@@ -76,11 +76,11 @@ open class PacmanPageControl: UIView {
     }
     
     #if TARGET_INTERFACE_BUILDER
-        public override func draw(_ rect: CGRect) {
+        open override func draw(_ rect: CGRect) {
             setSubLayers()
         }
 
-        public override func prepareForInterfaceBuilder() {
+        open override func prepareForInterfaceBuilder() {
             pageCount = 6
         }
     #endif
