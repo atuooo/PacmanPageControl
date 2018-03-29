@@ -36,8 +36,12 @@ open class PacmanPageControl: UIView {
         case fixed(UIColor)
         case changeWithEatenDot
     }
-
+    
+    /// strokeColor of pacman
+    open var strokeColor: UIColor = .white
+    /// color style of dot
     open var dotColorStyle:    DotColorStyle = .random(hue: .random, luminosity: .light)
+    /// color style of pacman
     open var pacmanColorStyle: PacmanColorStyle = .changeWithEatenDot
     
     @IBInspectable open var pacmanDiameter:  CGFloat = 12
@@ -54,7 +58,7 @@ open class PacmanPageControl: UIView {
             }
             
             if let newSV = scrollView {
-                pageCount = lroundf(Float(newSV.contentSize.width / newSV.frame.width))
+                pageCount = max(0, lroundf(Float(newSV.contentSize.width / newSV.frame.width)))
             }
         }
     }
@@ -111,7 +115,7 @@ open class PacmanPageControl: UIView {
         let svWidth = scrollView.frame.width
         progress = svOffsetX / svWidth
         
-        let checkCount = lroundf(Float(scrollView.contentSize.width / svWidth))
+        let checkCount = max(0, lroundf(Float(scrollView.contentSize.width / svWidth)))
         guard checkCount == pageCount, checkCount > 0 else { return pageCount = checkCount }
         
         if lastContentOffsetX < svOffsetX {
@@ -174,6 +178,7 @@ open class PacmanPageControl: UIView {
 
         guard pageCount != 0 else { return }
         
+        // set dots
         if dotInterval <= 0 {
             dotInterval = dotDiameter * 1.2
         }
@@ -196,10 +201,12 @@ open class PacmanPageControl: UIView {
             return dot
         }
         
+        // set pacman
         let oriX = pacmanOriginX  + progress * (dotDiameter + dotInterval)
         pacmanLayer.frame = CGRect(x: oriX, y: (frame.height - pacmanDiameter) / 2, width: pacmanDiameter, height: pacmanDiameter)
         pacmanLayer.contentsScale = UIScreen.main.scale
-        
+        pacmanLayer.strokeColor = strokeColor
+
         if case let .fixed(color) = pacmanColorStyle {
             pacmanLayer.color = color
         } else {

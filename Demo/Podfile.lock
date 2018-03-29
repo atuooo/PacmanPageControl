@@ -1,0 +1,16 @@
+PODS:
+  - PacmanPageControl (0.3.2)
+
+DEPENDENCIES:
+  - PacmanPageControl (from `../`)
+
+EXTERNAL SOURCES:
+  PacmanPageControl:
+    :path: ../
+
+SPEC CHECKSUMS:
+  PacmanPageControl: 5173d92f5159194631387e10ed738a1205d1bb86
+
+PODFILE CHECKSUM: b7353d43e0ce1d627b7de5a54b47bdf397e8c9b1
+
+COCOAPODS: 1.4.0

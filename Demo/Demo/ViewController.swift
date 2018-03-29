@@ -1,23 +1,26 @@
 //
 //  ViewController.swift
-//  PacmanPageControl-Demo
+//  Demo
 //
 //  Created by ooatuoo on 2017/3/25.
 //  Copyright © 2017年 ooatuoo. All rights reserved.
 //
 
 import UIKit
+import PacmanPageControl
 
 let pageCount = 7
 
 class ViewController: UIViewController {
     
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var pacman1: PacmanPageControl!
     
     lazy var pacman2: PacmanPageControl = {
         let pacmanFrame = CGRect(x: 0, y: view.frame.midY + 20, width: view.frame.width, height: 20)
         let pacman = PacmanPageControl(frame: pacmanFrame)
         pacman.scrollView = scrollView
+        pacman.strokeColor = randomColor(hue: .monochrome, luminosity: .dark)
         pacman.dotColorStyle = .same(.cyan)
         pacman.pacmanColorStyle = .fixed(.orange)
         return pacman

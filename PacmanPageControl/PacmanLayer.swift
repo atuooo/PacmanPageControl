@@ -25,18 +25,15 @@
 import UIKit
 
 class PacmanLayer: CALayer {
-    public var color: UIColor! 
+    public var color: UIColor!
+    public var strokeColor: UIColor = .white
     public var direction: ScrollDirection = .right
     
     public var factor: CGFloat = 0 {
-        didSet {
-            setNeedsDisplay()
-        }
+        didSet { setNeedsDisplay() }
     }
     
-    fileprivate var diameter: CGFloat!
-    fileprivate let lineWidth: CGFloat = 1.0
-    fileprivate let lineColor: UIColor = .white
+    private let lineWidth: CGFloat = 1.0
 
     enum ScrollDirection {
         case right
@@ -60,7 +57,7 @@ class PacmanLayer: CALayer {
         ctx.closePath()
         
         ctx.setLineWidth(lineWidth)
-        ctx.setStrokeColor(lineColor.cgColor)
+        ctx.setStrokeColor(strokeColor.cgColor)
         ctx.setFillColor(color.cgColor)
         ctx.drawPath(using: .fillStroke)
         ctx.fillPath()
@@ -72,11 +69,11 @@ class PacmanLayer: CALayer {
         
         ctx.beginPath()
         ctx.addEllipse(in: eyeRect)
-        ctx.setFillColor(lineColor.cgColor)
+        ctx.setFillColor(strokeColor.cgColor)
         ctx.fillPath()
     }
     
-    fileprivate func calculateAngle(with x: CGFloat) -> CGFloat {
+    private func calculateAngle(with x: CGFloat) -> CGFloat {
         let minAngle = CGFloat(27 / 180 * CGFloat.pi)
         let maxAngle = CGFloat(49 / 180 * CGFloat.pi)
         let zeroAngle = CGFloat(3 / 180 * CGFloat.pi)

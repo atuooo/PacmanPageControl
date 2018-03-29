@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PacmanPageControl_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -24,40 +24,30 @@
                             <scrollView verifyAmbiguity="off" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BrK-MK-leD">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </scrollView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yp9-X1-PVa" customClass="PacmanPageControl" customModule="PacmanPageControl_Demo" customModuleProvider="target">
-                                <rect key="frame" x="67" y="318" width="240" height="30"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="euW-wr-X3w" customClass="PacmanPageControl" customModule="PacmanPageControl">
+                                <rect key="frame" x="0.0" y="319" width="375" height="28"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="UIz-pA-hAN"/>
-                                    <constraint firstAttribute="width" constant="240" id="hue-G8-HT7"/>
+                                    <constraint firstAttribute="height" constant="28" id="8zv-6o-Bux"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="pacmanDiameter">
-                                        <real key="value" value="18"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="dotDiameter">
-                                        <real key="value" value="9"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="dotInterval">
-                                        <real key="value" value="12"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <outlet property="scrollView" destination="BrK-MK-leD" id="if5-3f-hLr"/>
+                                    <outlet property="scrollView" destination="BrK-MK-leD" id="HFc-dK-mDB"/>
                                 </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="euW-wr-X3w" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8vi-Sy-u1h"/>
                             <constraint firstItem="BrK-MK-leD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Cte-Ii-GbS"/>
                             <constraint firstAttribute="bottom" secondItem="BrK-MK-leD" secondAttribute="bottom" id="Icq-Pg-VK5"/>
                             <constraint firstItem="BrK-MK-leD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Kxk-5C-Sw2"/>
                             <constraint firstAttribute="trailing" secondItem="BrK-MK-leD" secondAttribute="trailing" id="aLE-Em-m0R"/>
-                            <constraint firstItem="yp9-X1-PVa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="b5y-61-Pbj"/>
-                            <constraint firstItem="yp9-X1-PVa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="k1y-8c-Emn"/>
+                            <constraint firstAttribute="trailing" secondItem="euW-wr-X3w" secondAttribute="trailing" id="nZo-gp-Gtb"/>
+                            <constraint firstItem="euW-wr-X3w" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pho-O6-9d6"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="pacman1" destination="euW-wr-X3w" id="MhH-7k-ref"/>
                         <outlet property="scrollView" destination="BrK-MK-leD" id="hEi-25-2vQ"/>
                     </connections>
                 </viewController>
